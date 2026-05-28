@@ -61,7 +61,7 @@
     <span class="float" style="top:86%;left:48%;font-size:1.8rem;opacity:0.30;--dx:-18px;--dy:-10px;--dr:-5deg;animation-duration:17s;animation-delay:-14s">gunterlie</span>
     <span class="float" style="top:94%;left:80%;font-size:2.1rem;opacity:0.18;--dx:14px;--dy:-18px;--dr:8deg;animation-duration:22s;animation-delay:-20s">gunterlie</span>
 
-    <div class="avatar-wrap">
+    <div class="avatar-wrap" id="avatar">
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow:visible">
         <defs>
           <clipPath id="c">
@@ -78,5 +78,47 @@
     </div>
 
   </div>
+
+<script>
+const avatar = document.getElementById('avatar');
+let busy = false;
+
+const tricks = [
+  () => css('spin',    600),
+  () => css('wobble',  700),
+  () => css('bounce',  600),
+  () => css('flip',    700),
+  () => css('glitch',  500),
+  () => css('shrink',  500),
+  () => css('shake',   400),
+  () => css('tilt',    800),
+  () => glow(),
+];
+
+function css(name, ms) {
+  avatar.style.animationName = name + ', pulse';
+  setTimeout(() => { avatar.style.animationName = 'pulse'; busy = false; }, ms);
+}
+
+function glow() {
+  const colors = [
+    'rgba(255,0,80',
+    'rgba(0,220,180',
+    'rgba(255,180,0',
+    'rgba(0,100,255',
+    'rgba(220,0,255',
+  ];
+  const c = colors[Math.floor(Math.random() * colors.length)];
+  avatar.style.setProperty('--glow', c);
+  avatar.classList.add('burst');
+  setTimeout(() => { avatar.classList.remove('burst'); avatar.style.removeProperty('--glow'); busy = false; }, 900);
+}
+
+avatar.addEventListener('click', () => {
+  if (busy) return;
+  busy = true;
+  tricks[Math.floor(Math.random() * tricks.length)]();
+});
+</script>
 </body>
 </html>
