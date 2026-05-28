@@ -96,22 +96,16 @@ const tricks = [
 ];
 
 function css(name, ms) {
-  avatar.style.animationName = name + ', pulse';
-  setTimeout(() => { avatar.style.animationName = 'pulse'; busy = false; }, ms);
+  avatar.style.animation = `${name} ${ms}ms ease-out, pulse 8s ease-in-out infinite`;
+  setTimeout(() => { avatar.style.animation = 'pulse 8s ease-in-out infinite'; busy = false; }, ms);
 }
 
 function glow() {
-  const colors = [
-    'rgba(255,0,80',
-    'rgba(0,220,180',
-    'rgba(255,180,0',
-    'rgba(0,100,255',
-    'rgba(220,0,255',
-  ];
+  const colors = ['rgba(255,0,80', 'rgba(0,220,180', 'rgba(255,180,0', 'rgba(0,100,255', 'rgba(220,0,255'];
   const c = colors[Math.floor(Math.random() * colors.length)];
   avatar.style.setProperty('--glow', c);
-  avatar.classList.add('burst');
-  setTimeout(() => { avatar.classList.remove('burst'); avatar.style.removeProperty('--glow'); busy = false; }, 900);
+  avatar.style.animation = `burst 900ms ease-out, pulse 8s ease-in-out infinite`;
+  setTimeout(() => { avatar.style.removeProperty('--glow'); avatar.style.animation = 'pulse 8s ease-in-out infinite'; busy = false; }, 900);
 }
 
 avatar.addEventListener('click', () => {
