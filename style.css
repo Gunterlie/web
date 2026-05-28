@@ -45,14 +45,17 @@ html, body {
 
 .tagline {
   position: absolute;
-  bottom: 1.8rem;
+  top: calc(50% + 130px);
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.65rem;
   letter-spacing: 0.2em;
-  color: rgba(150,130,180,0.35);
+  color: rgba(150,130,180,0.5);
   white-space: nowrap;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
+.tagline.hidden { opacity: 0; }
 
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 16px 4px rgba(100,0,180,.55), 0 0 50px 10px rgba(60,0,120,.30), 0 0 100px 20px rgba(40,0,80,.15); }
