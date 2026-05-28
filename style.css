@@ -50,10 +50,11 @@ html, body {
   transform: translateX(-50%);
   font-size: 0.65rem;
   letter-spacing: 0.2em;
-  color: rgba(150,130,180,0.5);
+  color: rgba(200,180,230,0.8);
   white-space: nowrap;
   opacity: 1;
   transition: opacity 1s ease;
+  z-index: 10;
 }
 .tagline.hidden { opacity: 0; }
 
