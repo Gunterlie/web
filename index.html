@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gunterlie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stage">
+
+    <span class="float" style="top:6%;left:8%;font-size:0.75rem;opacity:0.12;--dx:18px;--dy:24px;--dr:-6deg;animation-duration:22s;animation-delay:-3s">gunterlie</span>
+    <span class="float" style="top:11%;left:72%;font-size:1.8rem;opacity:0.28;--dx:-22px;--dy:14px;--dr:4deg;animation-duration:18s;animation-delay:-9s">gunterlie</span>
+    <span class="float" style="top:18%;left:42%;font-size:0.65rem;opacity:0.09;--dx:10px;--dy:-18px;--dr:8deg;animation-duration:26s;animation-delay:-14s">gunterlie</span>
+    <span class="float" style="top:24%;left:5%;font-size:2.2rem;opacity:0.18;--dx:30px;--dy:10px;--dr:-3deg;animation-duration:20s;animation-delay:-7s">gunterlie</span>
+    <span class="float" style="top:28%;left:85%;font-size:0.9rem;opacity:0.35;--dx:-14px;--dy:22px;--dr:12deg;animation-duration:15s;animation-delay:-2s">gunterlie</span>
+    <span class="float" style="top:42%;left:3%;font-size:1.3rem;opacity:0.14;--dx:20px;--dy:-12px;--dr:-9deg;animation-duration:24s;animation-delay:-18s">gunterlie</span>
+    <span class="float" style="top:44%;left:88%;font-size:0.7rem;opacity:0.22;--dx:-10px;--dy:-20px;--dr:5deg;animation-duration:19s;animation-delay:-5s">gunterlie</span>
+    <span class="float" style="top:58%;left:14%;font-size:2.5rem;opacity:0.10;--dx:16px;--dy:18px;--dr:-7deg;animation-duration:28s;animation-delay:-11s">gunterlie</span>
+    <span class="float" style="top:62%;left:78%;font-size:1.1rem;opacity:0.40;--dx:-24px;--dy:8px;--dr:10deg;animation-duration:17s;animation-delay:-6s">gunterlie</span>
+    <span class="float" style="top:70%;left:52%;font-size:0.8rem;opacity:0.15;--dx:12px;--dy:-16px;--dr:-4deg;animation-duration:23s;animation-delay:-20s">gunterlie</span>
+    <span class="float" style="top:75%;left:6%;font-size:1.5rem;opacity:0.20;--dx:26px;--dy:12px;--dr:6deg;animation-duration:21s;animation-delay:-1s">gunterlie</span>
+    <span class="float" style="top:82%;left:68%;font-size:0.6rem;opacity:0.30;--dx:-8px;--dy:-24px;--dr:-11deg;animation-duration:16s;animation-delay:-13s">gunterlie</span>
+    <span class="float" style="top:88%;left:32%;font-size:1.9rem;opacity:0.08;--dx:14px;--dy:20px;--dr:7deg;animation-duration:25s;animation-delay:-8s">gunterlie</span>
+    <span class="float" style="top:93%;left:85%;font-size:1.0rem;opacity:0.25;--dx:-18px;--dy:-10px;--dr:-5deg;animation-duration:19s;animation-delay:-16s">gunterlie</span>
+
+    <div class="avatar-wrap">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <clipPath id="circle-clip">
+            <circle cx="100" cy="100" r="95"/>
+          </clipPath>
+          <filter id="simplify" color-interpolation-filters="sRGB">
+            <feColorMatrix type="saturate" values="0"/>
+            <feComponentTransfer>
+              <feFuncR type="discrete" tableValues="0.08 0.35 0.65 0.92"/>
+              <feFuncG type="discrete" tableValues="0.08 0.35 0.65 0.92"/>
+              <feFuncB type="discrete" tableValues="0.08 0.35 0.65 0.92"/>
+            </feComponentTransfer>
+          </filter>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="6" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+          </filter>
+        </defs>
+        <!-- glow ring -->
+        <circle cx="100" cy="100" r="97" fill="none" stroke="rgba(180,180,220,0.15)" stroke-width="4" filter="url(#glow)"/>
+        <!-- poster-ized avatar -->
+        <image
+          href="https://avatars.githubusercontent.com/u/16029542?v=4"
+          x="0" y="0" width="200" height="200"
+          clip-path="url(#circle-clip)"
+          filter="url(#simplify)"
+          preserveAspectRatio="xMidYMid slice"
+        />
+        <!-- subtle border ring -->
+        <circle cx="100" cy="100" r="95" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      </svg>
+    </div>
+
+  </div>
+
+</body>
+</html>
