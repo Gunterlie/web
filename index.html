@@ -33,14 +33,7 @@
           <clipPath id="circle-clip">
             <circle cx="100" cy="100" r="95"/>
           </clipPath>
-          <filter id="simplify" color-interpolation-filters="sRGB">
-            <feColorMatrix type="saturate" values="0"/>
-            <feComponentTransfer>
-              <feFuncR type="discrete" tableValues="0.08 0.35 0.65 0.92"/>
-              <feFuncG type="discrete" tableValues="0.08 0.35 0.65 0.92"/>
-              <feFuncB type="discrete" tableValues="0.08 0.35 0.65 0.92"/>
-            </feComponentTransfer>
-          </filter>
+
           <filter id="glow">
             <feGaussianBlur stdDeviation="6" result="blur"/>
             <feComposite in="SourceGraphic" in2="blur" operator="over"/>
@@ -53,7 +46,6 @@
           href="https://avatars.githubusercontent.com/u/16029542?v=4"
           x="0" y="0" width="200" height="200"
           clip-path="url(#circle-clip)"
-          filter="url(#simplify)"
           preserveAspectRatio="xMidYMid slice"
         />
         <!-- subtle border ring -->
