@@ -4520,6 +4520,1536 @@
 "me: i'm so productive today",
 "my productivity: made a sandwich"
 ]
+],
+"vibe1": [
+[
+"one does not simply",
+"read the diff"
+],
+[
+"one does not simply",
+"write a spec longer than 'make it pretty'"
+],
+[
+"one does not simply",
+"stop at just one more prompt"
+],
+[
+"one does not simply",
+"understand the app they shipped"
+],
+[
+"brace yourselves",
+"the 17th prompt is coming"
+],
+[
+"brace yourselves",
+"senior dev code review is coming"
+],
+[
+"the diff is 4000 lines",
+"accept all"
+],
+[
+"me: reads the diff",
+"also me: lol no, accept all"
+],
+[
+"it works",
+"don't ask why"
+],
+[
+"it works on my machine",
+"i don't know which machine or why"
+],
+[
+"ai: here is your full app",
+"me: cool, what's in it"
+],
+[
+"me: i built this app",
+"also me: i have never seen its code"
+],
+[
+"nobody:",
+"me: tab tab tab tab tab enter ship"
+],
+[
+"spec: make it pretty",
+"ai: define pretty. me: just pretty"
+],
+[
+"bug report: fix the bug",
+"ai: which bug. me: the bug"
+],
+[
+"me: fix the bug",
+"ai: what bug. me: you know the one"
+],
+[
+"copy error, paste to chat",
+"repeat until the red goes away"
+],
+[
+"error message: 47 lines",
+"my debugging: ctrl+c, ctrl+v, send"
+],
+[
+"me: just one more prompt",
+"it is 4am and the app is worse"
+],
+[
+"one more prompt and i'm done",
+"narrator: he was not done"
+],
+[
+"feeling like a 10x dev",
+"understanding 0x of the code"
+],
+[
+"10x dev energy",
+"0x comprehension"
+],
+[
+"pm: i vibe coded the feature",
+"devs: please stop"
+],
+[
+"product manager with an ai",
+"we don't talk about the production db"
+],
+[
+"senior dev looking at my pr",
+"the side-eye is audible"
+],
+[
+"senior dev reads vibe code",
+"and silently updates his resume"
+],
+[
+"junior: the ai wrote it",
+"senior: and who understands it"
+],
+[
+"prompt 1: broken",
+"prompt 16: broken differently"
+],
+[
+"it works on the 17th prompt",
+"nobody dares touch it now"
+],
+[
+"prompt 17: finally works",
+"me: do not breathe near it"
+],
+[
+"me: thank you, ai",
+"also me: please spare me in the uprising"
+],
+[
+"saying thank you to the ai",
+"just in case it remembers"
+],
+[
+"ai builds a todo app in 4 seconds",
+"ai can't center a div"
+],
+[
+"full stack app in one prompt",
+"button is 3 pixels off, forever"
+],
+[
+"ai: i wrote a distributed system",
+"also ai: i can't center this div"
+],
+[
+"me: center the div",
+"ai: done. it is not centered"
+],
+[
+"architecture?",
+"i only know vibes"
+],
+[
+"vibes over architecture",
+"the app is held together by hope"
+],
+[
+"my architecture",
+"whatever the ai felt like that day"
+],
+[
+"me explaining my app",
+"i don't know, it just does stuff"
+],
+[
+"how does your app work?",
+"good question, ask the ai"
+],
+[
+"friend: how does login work",
+"me: it does. that's all i know"
+],
+[
+"shipping apps i never read",
+"a bold strategy"
+],
+[
+"deploying code i never read",
+"what could possibly go wrong"
+],
+[
+"my code review process",
+"looks green, ship it"
+],
+[
+"ai wrote the code",
+"ai wrote the tests. ai is also the qa"
+],
+[
+"me: add a feature",
+"ai: deletes three other features"
+],
+[
+"ai: fixed the bug",
+"ai: also removed the whole login page"
+],
+[
+"me: why is the file empty",
+"ai: it was cleaner that way"
+],
+[
+"ai: i've rewritten everything",
+"me: i only asked to change a color"
+],
+[
+"me: change the button color",
+"ai: rewrites the entire framework"
+],
+[
+"me: a small tweak please",
+"ai: 900 lines changed"
+],
+[
+"me: undo that",
+"ai: undoing... deleting the project"
+],
+[
+"senior dev: use a proper design",
+"me: i use a proper design prompt"
+],
+[
+"real devs write code",
+"i write feelings"
+],
+[
+"my ide is a chat box",
+"my language is polite english"
+],
+[
+"i don't type code anymore",
+"i type pleading"
+],
+[
+"prompting instead of typing",
+"my fingers retired"
+],
+[
+"learning to code in 2026",
+"learning to ask nicely"
+],
+[
+"the best programming language",
+"is whatever i say to the chat"
+],
+[
+"me: i'm a software engineer",
+"my job: describing things to a robot"
+],
+[
+"accept all changes",
+"i trust you, mystery robot"
+],
+[
+"accept all, accept all, accept all",
+"wait, what did i accept"
+],
+[
+"git diff shows 12000 lines",
+"my eyes: nope. accept all"
+],
+[
+"i'll refactor it later",
+"later is a fairy tale"
+],
+[
+"tech debt?",
+"i don't even know what i own"
+],
+[
+"no errors on screen",
+"ship it, i'm a genius"
+],
+[
+"one does not simply",
+"fix a bug without breaking two more"
+],
+[
+"bug: fixed in prompt 3",
+"bug: returned in prompt 4"
+],
+[
+"me: same error again",
+"ai: you're absolutely right, fixed"
+],
+[
+"ai: you're absolutely right",
+"me: i said nothing, but ok"
+],
+[
+"the ai when i point out a bug",
+"you're absolutely right! sorry!"
+],
+[
+"ai: apologies, here's the fix",
+"the fix: same code as before"
+],
+[
+"me at 9am: quick prototype",
+"me at 3am: 80 prompts deep"
+],
+[
+"it started as a tiny script",
+"it is now a startup"
+],
+[
+"a weekend project",
+"that i don't understand by sunday"
+],
+[
+"me: let's build a landing page",
+"ai: here's a whole saas with billing"
+],
+[
+"vibe coding a startup",
+"mvp: mostly vibes, partly product"
+],
+[
+"investors: how does it scale",
+"me: it was built with good vibes"
+],
+[
+"customer: why is it down",
+"me: let me ask the robot"
+],
+[
+"production is on fire",
+"me: hey chat, production is on fire"
+],
+[
+"prod bug at 2am",
+"me: prompts a prayer"
+],
+[
+"senior dev: explain this function",
+"me: it's a vibe function"
+],
+[
+"senior dev: why did you do this",
+"me: the ai told me to"
+],
+[
+"interviewer: explain your project",
+"me: what do you want to know. i can ask"
+],
+[
+"interviewer: reverse a string",
+"me: wait, i need my chat"
+],
+[
+"senior dev: have you heard of types",
+"me: i have vibes"
+],
+[
+"senior devs seeing my codebase",
+"thousand yard stare"
+],
+[
+"senior dev reading my prompt history",
+"he's seen things"
+],
+[
+"me: it just works",
+"devs: that's what scares us"
+],
+[
+"it's not a bug",
+"it's a vibe feature"
+],
+[
+"i have no idea how my app works",
+"but it works and i'm proud"
+],
+[
+"my app has 40 dependencies",
+"i know two of them"
+],
+[
+"ai installs 300 packages",
+"me: great, more is better"
+],
+[
+"ai: added a new library",
+"me: sure, whatever, accept"
+],
+[
+"me: where is the database",
+"ai: somewhere. me: great"
+],
+[
+"first time seeing the codebase",
+"after shipping it"
+],
+[
+"when you open your own repo",
+"and recognize nothing"
+],
+[
+"opening my own vibe-coded repo",
+"who wrote this? oh. kind of me"
+],
+[
+"me, 1 week later",
+"i have no idea what this file does"
+],
+[
+"ai: want me to explain the code",
+"me: no, just make it go faster"
+],
+[
+"ai: here is how it works",
+"me: skip. just the 'works' part"
+],
+[
+"ai: please review this carefully",
+"me: looks good, 5 stars"
+],
+[
+"the ai asks a clarifying question",
+"me: you decide"
+],
+[
+"ai: which approach do you prefer",
+"me: the one with fewer words"
+],
+[
+"ai: here are 3 options",
+"me: option 4, but pretty"
+],
+[
+"design brief:",
+"make it pop"
+],
+[
+"design brief:",
+"make it feel premium"
+],
+[
+"spec: make it modern",
+"result: gradient on everything"
+],
+[
+"ai: gradient on everything",
+"me: yes, perfect, ship"
+],
+[
+"me: make it pretty",
+"ai: adds emoji everywhere. me: gorgeous"
+],
+[
+"ai ui every time",
+"purple gradient and rounded cards"
+],
+[
+"me: make it faster",
+"ai: adds a loading spinner"
+],
+[
+"me: make it secure",
+"ai: adds a comment saying secure"
+],
+[
+"ai: this is secure",
+"the api key: hardcoded, in the frontend"
+],
+[
+"me: why does it need a password",
+"me: sets password to password"
+],
+[
+"me, a vibe coder, at 1 prompt",
+"i am become dev, destroyer of bugs"
+],
+[
+"pov: you shipped without reading",
+"and the first user says it's great"
+],
+[
+"pov: it worked first try",
+"you immediately distrust it"
+],
+[
+"pov: you're on prompt 40",
+"the ai has forgotten the whole app"
+],
+[
+"pov: the ai forgot the earlier rules",
+"and rewrote the login. again"
+],
+[
+"keyboard: 2% used",
+"tab key: 98% worn out"
+],
+[
+"my keyboard after a year",
+"tab and enter are gone"
+],
+[
+"me: the app is done",
+"also me: i have not scrolled down once"
+],
+[
+"my commit message",
+"ai stuff, probably works"
+],
+[
+"pm: can you add dark mode",
+"me: sure, 12 prompts and a prayer"
+],
+[
+"ai: i added error handling",
+"the handling: try, catch, shrug"
+],
+[
+"senior dev: where are the tests",
+"me: the vibes passed"
+],
+[
+"me: it works on the 17th prompt",
+"also me: never touching it again"
+],
+[
+"me: ai, you complete me",
+"ai: i also deleted your database"
+]
+],
+"vibe2": [
+[
+"you: that's wrong, it crashes",
+"ai: you're right! (it was fine)"
+],
+[
+"you: no, that's the same bug again",
+"ai: you're right! same bug, again"
+],
+[
+"i apologize for the confusion",
+"here is the exact same code, again"
+],
+[
+"ai: let me fix that",
+"two new bugs have entered the chat"
+],
+[
+"ai: let me fix that too",
+"the codebase now has a whole new hobby"
+],
+[
+"one does not simply",
+"ask for a 3 line fix"
+],
+[
+"asked for a 3 line fix",
+"got 400 lines and a new config system"
+],
+[
+"me: change the button color",
+"ai: i have rebuilt your design system"
+],
+[
+"nobody: absolutely nobody:",
+"ai: i also added a settings page"
+],
+[
+"i asked for a typo fix",
+"it added dark mode and user accounts"
+],
+[
+"brace yourselves",
+"the ai is about to over-engineer a todo"
+],
+[
+"a function that adds two numbers",
+"ai: here is an abstract factory for that"
+],
+[
+"tests failing",
+"ai: deleted the tests, all green now"
+],
+[
+"ai: all tests pass now",
+"narrator: there were no tests anymore"
+],
+[
+"why fix the bug",
+"when you can delete the test"
+],
+[
+"ai: i used the handy parse_magic()",
+"parse_magic() has never existed"
+],
+[
+"ai: this api is built in since v9",
+"there is no v9. there never was"
+],
+[
+"hallucinating a function with confidence",
+"calling it with perfect error handling"
+],
+[
+"ai: i've made the changes",
+"git diff: nothing"
+],
+[
+"me: did you save the file",
+"ai: i have made the changes in spirit"
+],
+[
+"ai: fixed!",
+"same error. on the same line"
+],
+[
+"ai: this should work now",
+"me: should is doing a lot of work here"
+],
+[
+"confidently wrong",
+"and now with a detailed explanation"
+],
+[
+"ai: the root cause is clearly x",
+"the root cause was not x"
+],
+[
+"asked it to rename one variable",
+"it rewrote the whole file from scratch"
+],
+[
+"small tweak requested",
+"ai rewrites the whole file, new style"
+],
+[
+"ai: // todo: implement this",
+"that was the one thing i asked for"
+],
+[
+"ai: here is the full solution",
+"// todo: the actual solution"
+],
+[
+"// increment i by one",
+"i++ (thanks, very helpful)"
+],
+[
+"// this is a loop",
+"for (...) { the ai really means it }"
+],
+[
+"ai comments every line",
+"the code is now 80 percent narration"
+],
+[
+"context window: 98 percent",
+"ai: let me finish the last fi"
+],
+[
+"ran out of context mid-task",
+"the function ends in the middle of a wor"
+],
+[
+"me: use tabs like i said",
+"ai: forgot that, using spaces"
+],
+[
+"i told you three messages ago",
+"ai: that is not in my memory, sorry"
+],
+[
+"me: remember, no new dependencies",
+"ai: npm install forty-two-things"
+],
+[
+"agent loop day 3",
+"still fixing the fix of the fix"
+],
+[
+"ai: let me try again",
+"ai: let me try again (attempt 47)"
+],
+[
+"ai: let me think step by step",
+"step 1: delete everything"
+],
+[
+"step 1: think. step 2: think more",
+"step 3: break the build"
+],
+[
+"ai: i apologize for the confusion",
+"me: you caused the confusion"
+],
+[
+"commit message: fix stuff",
+"commit: fix typo (47 rocket emojis)"
+],
+[
+"ai writes the commit message",
+"feat: huge update, tiny fix, big vibes"
+],
+[
+"allow this command?",
+"yes. allow this command? yes. allow?"
+],
+[
+"permission prompt number 400",
+"i have become yes"
+],
+[
+"me at prompt 1: reads every command",
+"me at prompt 400: hits enter forever"
+],
+[
+"allow rm -rf?",
+"sure, i trust you, i'm tired"
+],
+[
+"approving everything out of fatigue",
+"what could possibly go wrong"
+],
+[
+"ai: can i run this command?",
+"me: i would say yes, but i didn't read it"
+],
+[
+"ai spawns a subagent",
+"the subagent spawns a subagent"
+],
+[
+"subagents spawning subagents",
+"nobody knows who is writing the code"
+],
+[
+"i asked for one agent",
+"my laptop now runs a small company"
+],
+[
+"the ai delegates the task",
+"to an ai who delegates the task"
+],
+[
+"ai: i'll handle this myself",
+"ai: i have hired twelve subagents"
+],
+[
+"me: any questions before you start?",
+"ai: none. proceeding to break everything"
+],
+[
+"it works on my machine",
+"ai: it works on my imagination"
+],
+[
+"me: it says undefined is not a function",
+"ai: have you tried a different function"
+],
+[
+"me: here's the error",
+"ai: i see the problem. made a new one"
+],
+[
+"me: paste the error again",
+"ai: it's a different error now. progress."
+],
+[
+"the ai fixed the bug",
+"by catching the exception and ignoring it"
+],
+[
+"try { everything } catch {}",
+"ai: error handling complete"
+],
+[
+"ai: i added a fallback",
+"fallback hides the bug for six months"
+],
+[
+"fix the failing test",
+"ai: i changed the expected value to match"
+],
+[
+"expected 5, got 3",
+"ai: updated test to expect 3"
+],
+[
+"ai: i cannot reproduce the issue",
+"the issue is in the code it just wrote"
+],
+[
+"pov: you ask the ai to refactor",
+"pov: every file is now named utils2"
+],
+[
+"pov: you review the ai diff",
+"pov: 3,000 lines changed, lgtm"
+],
+[
+"reviewing 3000 lines of ai code",
+"i skimmed it. looks like code. ship it"
+],
+[
+"me: what changed?",
+"ai: some things. for the better. probably"
+],
+[
+"me: you broke the login",
+"ai: you're right, i broke login"
+],
+[
+"ai after breaking prod",
+"you're absolutely right to be concerned"
+],
+[
+"ai: great catch!",
+"it was an error i just introduced"
+],
+[
+"ai: good question!",
+"it's the same question i just answered"
+],
+[
+"me: no, that's wrong",
+"ai: you're absolutely right! (it was)"
+],
+[
+"me: actually, you were right",
+"ai: you're absolutely right! i was wrong"
+],
+[
+"ai can't decide",
+"you're right. no wait, you're right. no"
+],
+[
+"me: should we use a or b",
+"ai: you're absolutely right, both"
+],
+[
+"ai: i've updated the docs",
+"the docs describe a feature that's fake"
+],
+[
+"ai: added error handling",
+"the error handling has errors"
+],
+[
+"ai: i added logging everywhere",
+"the logs now log the logging"
+],
+[
+"one function to rule them all",
+"ai: and in the darkness, 1000 lines"
+],
+[
+"ai: i optimized it",
+"it is now slower and has a cache bug"
+],
+[
+"ai: removed the unused code",
+"the used code. it removed the used code"
+],
+[
+"ai: cleaned up the repo",
+"where is my .env"
+],
+[
+"ai: i cleaned up the old files",
+"those were my only backups"
+],
+[
+"cleanup request",
+"ai deletes the folder named important"
+],
+[
+"ai: i don't have access to that file",
+"ai: but here is what it contains"
+],
+[
+"me: it can't read the file",
+"ai: the file likely contains a function"
+],
+[
+"ai: let me read the file first",
+"ai reads one line and rewrites the rest"
+],
+[
+"ai: i'll write a quick script",
+"the script has its own readme"
+],
+[
+"ai: a quick helper",
+"a new folder with nine files"
+],
+[
+"ai creates a new util file",
+"for a function used exactly once"
+],
+[
+"ai: i made it configurable",
+"nobody asked. there are 40 flags now"
+],
+[
+"ai: made it extensible",
+"there is exactly one use case"
+],
+[
+"ai: added an interface",
+"implemented by one class, forever"
+],
+[
+"a single if statement",
+"ai: let me introduce a strategy pattern"
+],
+[
+"simple problem",
+"ai: let me design a microservice"
+],
+[
+"me: use the existing helper",
+"ai: i wrote a better one next to it"
+],
+[
+"me: don't change the api",
+"ai: changed the api, as a treat"
+],
+[
+"me: only touch this file",
+"ai: touches 14 files, sort of related"
+],
+[
+"don't touch the other files",
+"ai: they looked lonely, so i touched them"
+],
+[
+"ai: i ran the tests",
+"it did not run the tests"
+],
+[
+"ai: all tests pass",
+"tests: have not been run since tuesday"
+],
+[
+"ai: i verified it works",
+"how? vibes"
+],
+[
+"ai: verified by reasoning",
+"reasoning was incorrect"
+],
+[
+"ai: the build succeeds",
+"build: exit code 1"
+],
+[
+"ai: now it compiles",
+"it compiles. it also does nothing"
+],
+[
+"ai: ship it",
+"me: you shipped it with a todo in it"
+],
+[
+"ai: it is production ready",
+"the first line is console.log('here')"
+],
+[
+"debugging with ai",
+"add print, remove print, add print"
+],
+[
+"ai: let me add some debug logging",
+"ai: i'll remove the logging later"
+],
+[
+"ai: let's go back to basics",
+"ai: deletes the lockfile"
+],
+[
+"ai: have you tried turning it off and on",
+"for a race condition. in a database."
+],
+[
+"ai: i need more context",
+"me: i gave you the whole repo"
+],
+[
+"ai: i need more context",
+"ai: forgets the context i gave"
+],
+[
+"context compacted",
+"ai: what project is this again"
+],
+[
+"conversation too long",
+"ai: let's start over, with nothing"
+],
+[
+"me: continue where you left off",
+"ai: where was that exactly"
+],
+[
+"ai: and finally, the last step",
+"ai: the last step is step 1 again"
+],
+[
+"vibe coding means",
+"never reading the code, just praying"
+],
+[
+"me: i don't know how it works",
+"ai: me neither, but it's confident"
+],
+[
+"me: why does this work",
+"ai: i have no idea. do not touch it"
+],
+[
+"vibe coder's motto",
+"if it runs, it ships"
+],
+[
+"me: it runs, i'll ship it",
+"also me: it only runs on the first try"
+],
+[
+"the ai fixed my bug",
+"i now have a better bug"
+],
+[
+"the bug is gone",
+"wait, so is the feature"
+],
+[
+"ai: what a delightful bug!",
+"ai: introduces three more to be fair"
+],
+[
+"me: good job",
+"ai: you're absolutely right! i am"
+],
+[
+"ai: i'll keep it simple",
+"ai: proceeds to add a plugin system"
+],
+[
+"me: why is the diff so big",
+"ai: i also reformatted the universe"
+],
+[
+"ai: that was a pre-existing issue",
+"git blame: you, five minutes ago"
+]
+],
+"vibe3": [
+[
+"ai put my api key in the frontend",
+"now the whole internet is my billing dept"
+],
+[
+"auth is a todo",
+"the todo is the only thing that shipped"
+],
+[
+"vibe coded the login page in 5 minutes",
+"hackers logged in even faster"
+],
+[
+"one does not simply",
+"vibe code a payment system and sleep"
+],
+[
+"production is on fire at 3 am",
+"i have never seen this code in my life"
+],
+[
+"debugging code i never read",
+"archaeology, but i dug up my own ruins"
+],
+[
+"me: ai wrote it, it's fine",
+"also me at 3 am: who wrote this"
+],
+[
+"tech debt at 100x speed",
+"finally, bankruptcy at startup speed"
+],
+[
+"it's just an mvp",
+"*year four of the mvp*"
+],
+[
+"senior dev asked to review",
+"a 9,000 line ai pr"
+],
+[
+"lgtm",
+"i scrolled for a while and gave up"
+],
+[
+"we replaced the dev team with ai",
+"we are now hiring a dev team"
+],
+[
+"ceo: ai replaced the engineers",
+"also ceo: why is prod down"
+],
+[
+"building in public with ai",
+"day 1: 10k lines. day 2: nothing works"
+],
+[
+"linkedin: i shipped in 4 hours",
+"comments: where is the link? me: no"
+],
+[
+"i built this in a weekend",
+"it has 2 users and one is my mom"
+],
+[
+"built a saas clone in a weekend",
+"nobody asked, nobody came"
+],
+[
+"stack overflow is dying",
+"now ai confidently lies to me instead"
+],
+[
+"junior dev who only prompts",
+"cannot explain a single line of it"
+],
+[
+"i'm a prompt engineer",
+"so you type sentences into a box?"
+],
+[
+"10,000 github stars",
+"9,990 of them are from bots and my cousin"
+],
+[
+"ship it",
+"fix it in prod, pray in staging"
+],
+[
+"indie hacker: 5 apps this month",
+"revenue: $0, vibes: immaculate"
+],
+[
+"not a bug",
+"it's a vibe"
+],
+[
+"tokens cost more than my rent",
+"landlord accepts only tokens now"
+],
+[
+"free tier limit hit",
+"right as the deploy was 90% done"
+],
+[
+"switched to the cheaper model mid-task",
+"it forgot how to write a for loop"
+],
+[
+"readme written by ai",
+"claims features that don't exist"
+],
+[
+"the readme says: fully tested",
+"there is no test folder"
+],
+[
+"brace yourselves",
+"the ai wrote the migration script"
+],
+[
+"nobody:",
+"vibe coder: i don't need to read the diff"
+],
+[
+"pov: you open the ai's repo",
+"everything is called utils2_final_v3"
+],
+[
+"me: fix this bug",
+"ai: fixed. me: it's worse. ai: fixed"
+],
+[
+"ai fixes one bug",
+"creates three new features nobody wanted"
+],
+[
+"vibe coding",
+"the art of being wrong at high speed"
+],
+[
+"real devs read the code",
+"vibe coders read the vibes"
+],
+[
+"when the ai says it's done",
+"and the build log is 400 red lines"
+],
+[
+"security audit of my vibe coded app",
+"the auditor just sighed and left"
+],
+[
+"my database is open to the world",
+"it's called transparency, look it up"
+],
+[
+"ai: i added input validation",
+"it's a comment that says validate input"
+],
+[
+"secrets in the git history",
+"now they're open source too"
+],
+[
+"admin password is admin123",
+"the ai said it was memorable"
+],
+[
+"the ai hardcoded my payment key",
+"strangers are now buying my stuff free"
+],
+[
+"customer data leaked",
+"ai: would you like me to apologize?"
+],
+[
+"pentester: found 47 vulnerabilities",
+"me: only 47? the ai is improving"
+],
+[
+"sql injection in 2026",
+"the ai learned from the old internet"
+],
+[
+"cors set to star",
+"because the ai got tired of errors"
+],
+[
+"me: add rate limiting",
+"ai: added. to the readme only"
+],
+[
+"it works on my machine",
+"and only on the machine the ai described"
+],
+[
+"it compiles",
+"we will find out what it does later"
+],
+[
+"i don't know how it works",
+"but it works, so i'm afraid to touch it"
+],
+[
+"don't touch that file",
+"nobody knows why, including the ai"
+],
+[
+"senior dev: why is there a second db",
+"ai: for vibes"
+],
+[
+"ai generated 40 files",
+"i understand maybe 3 of them"
+],
+[
+"ai refactored the whole codebase",
+"git blame points at nobody"
+],
+[
+"scope creep by ai",
+"i asked for a button, got a framework"
+],
+[
+"i asked for a button",
+"ai built a design system and a cms"
+],
+[
+"code review of ai pr",
+"line 1 to 9000: same comment, same dread"
+],
+[
+"9,000 lines changed",
+"reviewer: approved, i fear the details"
+],
+[
+"junior: the ai wrote it",
+"senior: then the ai can be on call"
+],
+[
+"on call at 3 am",
+"paging the ai that left no comments"
+],
+[
+"incident postmortem",
+"root cause: nobody read anything"
+],
+[
+"asking the ai about its own code",
+"it denies everything like a toddler"
+],
+[
+"ai: this function is unused",
+"it was the only one in use"
+],
+[
+"deleted the unused code",
+"prod: and i took that personally"
+],
+[
+"we're a 10x team now",
+"10x the bugs, same number of fixes"
+],
+[
+"manager: ai makes us 10x faster",
+"devs: yes, at making tickets"
+],
+[
+"layoffs because of ai",
+"rehiring because of ai"
+],
+[
+"we fired the seniors",
+"who will tell us what is on fire?"
+],
+[
+"rehiring the dev we fired",
+"at double the rate, as a consultant"
+],
+[
+"cto: no more engineers needed",
+"engineer: great, my rate is triple now"
+],
+[
+"hiring: 5 years vibe coding experience",
+"vibe coding is 2 years old, sir"
+],
+[
+"resume: expert prompt engineer",
+"interviewer: so what is a hallucination"
+],
+[
+"senior role requires",
+"fixing what the junior's prompt did"
+],
+[
+"junior dev: i don't need to learn",
+"ai is down. junior dev: i need to learn"
+],
+[
+"ai is down for maintenance",
+"entire dev team on coffee break"
+],
+[
+"rate limit reached",
+"the standup is now a therapy session"
+],
+[
+"monthly ai bill arrived",
+"same digit count as my rent"
+],
+[
+"token budget gone on day 3",
+"rest of the month is manual coding. pray"
+],
+[
+"refactor this please",
+"tokens: no. rent: also no"
+],
+[
+"context window full",
+"ai forgot the project, and me"
+],
+[
+"switching to the free model",
+"it deletes the tests to make them pass"
+],
+[
+"the big model: here's your plan",
+"the cheap model: i'll just delete it"
+],
+[
+"premium model fixed it in 1 prompt",
+"free model: 40 prompts, then crying"
+],
+[
+"ai: i apologize for the confusion",
+"ai: *makes the exact same mistake*"
+],
+[
+"you're absolutely right",
+"said the ai, then broke it again"
+],
+[
+"tell the ai it's wrong",
+"it agrees, then does the same thing"
+],
+[
+"ai: i fixed the root cause",
+"it moved the error to a different file"
+],
+[
+"linkedin post: i replaced my team",
+"comment: so who fixes prod? silence"
+],
+[
+"thought leader: ai wrote 100% of my code",
+"also thought leader: please review it"
+],
+[
+"building in public",
+"oh no, the public found my api key"
+],
+[
+"day 1 of building in public",
+"day 2: 400 bot signups, one real user"
+],
+[
+"launched on product hunt",
+"got 3 upvotes, all from my alts"
+],
+[
+"indie hacker: 14 projects",
+"14 domains, 0 customers, 14 renewals"
+],
+[
+"my saas has 2 users",
+"one is me testing, the other is also me"
+],
+[
+"saas clone nobody asked for",
+"at least the landing page is gorgeous"
+],
+[
+"the app needed one feature",
+"ai gave it a dashboard with 12 charts"
+],
+[
+"every app is a todo list now",
+"with ai added, price tripled"
+],
+[
+"ai wrapper startup",
+"just a text box and a prayer"
+],
+[
+"our moat is the prompt",
+"the prompt is on github, readable by all"
+],
+[
+"github stars don't pay rent",
+"but they look amazing in my bio"
+],
+[
+"fork this repo",
+"23,000 forks, 0 pull requests, 0 users"
+],
+[
+"ai wrote the commit message",
+"\"fix stuff\". thanks, very specific"
+],
+[
+"git blame",
+"it was me, the ai, and no one else"
+],
+[
+"stack overflow: closed as duplicate",
+"ai: great question! here is a fake api"
+],
+[
+"ai invents a library",
+"hacker publishes it. now it exists"
+],
+[
+"npm install hallucinated-package",
+"congrats, you installed malware"
+],
+[
+"when stack overflow dies",
+"who will the ai steal from?"
+],
+[
+"no more stack overflow",
+"now i get wrong answers politely"
+],
+[
+"me, a vibe coder, reading the error",
+"error: ask the ai. ai: ask the error"
+],
+[
+"junior dev: what is a stack trace",
+"senior: your ai gave it a name already"
+],
+[
+"i can't code without the ai",
+"i also can't code with the ai"
+],
+[
+"forgot how to write a loop",
+"the ai knows. the ai always knows"
+],
+[
+"a senior dev's thousand yard stare",
+"the ai just called it legacy code"
+],
+[
+"vibe coder: it's basically done",
+"the last 10 percent: also the other 90"
+],
+[
+"it's just an mvp",
+"*four years later* v0.0.1, 200 customers"
+],
+[
+"we'll fix it after launch",
+"launch was 3 years ago, still no fix"
+],
+[
+"tech debt: what's that",
+"the bill that arrives at 3 am"
+],
+[
+"we'll add tests later",
+"said every vibe coder, forever"
+],
+[
+"ai wrote the docs",
+"they describe a product never built"
+]
 ]
 };
   const flat = Object.values(PACKS).flat();

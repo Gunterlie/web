@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <div class="stage">
@@ -144,7 +144,7 @@
     </nav>
   </div>
 
-<script src="captions.js?v=4"></script>
+<script src="captions.js?v=5"></script>
 <script>
 (function () {
   'use strict';
@@ -161,7 +161,7 @@
   setInterval(() => { if (!document.hidden) { document.title = (t + t).slice(ti, ti + 16); ti = (ti + 1) % t.length; } }, 180);
 
   /* ---- floating words ---- */
-  const words = ["gunterlie", "gunterlie", "gunterlie", "gunterlie", "gunterlie", "gunterlie", "slurp", "slurp slurp", "orange", "what did you expect?", "based", "no regressions", "ship it", "touch grass", "it's dns", "lgtm", "vibes", "sudo", "git push --force", "404", "kernel panic", "segfault", "merge conflict", "skill issue", "ratio", "cope", "seethe", "mald", "gigachad", "sigma", "npc", "main character", "w", "l", "fr fr", "no cap", "bussin", "rizz", "sus", "poggers", "kekw", "monke", "stonks", "this is fine", "press f", "ok boomer", "big brain", "galaxy brain", "chef's kiss", "mustache.exe", "beard.dll", "orange.sh", "rm -rf /", "ctrl+z", "alt+f4", "hello world", "undefined", "NaN", "null", "TODO", "FIXME", "works on my machine", "one more commit", "it's friday", "sleep.exe not found", "orange man", "smug", "chaos", "memes", "lore", "canon", "banger", "cursed", "blessed", "unhinged", "feral", "goblin mode", "crab rave", "nyan", "doge", "wow", "such orange", "very meme", "much slurp"];
+  const words = ["gunterlie", "gunterlie", "gunterlie", "gunterlie", "gunterlie", "gunterlie", "slurp", "slurp slurp", "orange", "what did you expect?", "based", "no regressions", "ship it", "touch grass", "it's dns", "lgtm", "vibes", "sudo", "git push --force", "404", "kernel panic", "segfault", "merge conflict", "skill issue", "ratio", "cope", "seethe", "mald", "gigachad", "sigma", "npc", "main character", "w", "l", "fr fr", "no cap", "bussin", "rizz", "sus", "poggers", "kekw", "monke", "stonks", "this is fine", "press f", "ok boomer", "big brain", "galaxy brain", "chef's kiss", "mustache.exe", "beard.dll", "orange.sh", "rm -rf /", "ctrl+z", "alt+f4", "hello world", "undefined", "NaN", "null", "TODO", "FIXME", "works on my machine", "one more commit", "it's friday", "sleep.exe not found", "orange man", "smug", "chaos", "memes", "lore", "canon", "banger", "cursed", "blessed", "unhinged", "feral", "goblin mode", "crab rave", "nyan", "doge", "wow", "such orange", "very meme", "much slurp","vibe coding","vibes only","accept all","you're absolutely right","let me fix that","one more prompt","tab tab tab","looks good to me","trust the vibes","no tests","ship the vibe","10x dev","prompt: make it pretty","i don't read diffs","it just works","agent go brrr","context full","rebase? vibes","git commit -am fix"];
   const emojis = ["🍊", "🔥", "💀", "🗿", "🦆", "🐸", "🥕", "🧡", "🚧", "📦", "🐧", "🤡", "👁️", "🫠", "🧃", "🪩", "🛸", "🌋", "🦀", "🐙", "🥭", "🍑", "⚡", "💥", "🎃", "🦊", "🐯", "🧨"];
   const stage = document.querySelector('.stage'), floats = $('floats');
   const frag = document.createDocumentFragment();
@@ -183,7 +183,7 @@
   setTimeout(() => $('tagline').classList.add('hidden'), 6000);
 
   /* ---- ticker rows (scrolling meme tape) ---- */
-  const tape = ['slurp slurp slurp','what did you expect?','no regressions','ship it on friday','it was dns','orange orange orange','touch grass (later)','skill issue','gunterlie approves','merge to main and pray','vibes only','404 sleep not found','one more commit','based and orange-pilled','chaos is a ladder','the mustache sees all'];
+  const tape = ['slurp slurp slurp','what did you expect?','no regressions','ship it on friday','it was dns','orange orange orange','touch grass (later)','skill issue','gunterlie approves','merge to main and pray','vibes only','404 sleep not found','one more commit','based and orange-pilled','chaos is a ladder','the mustache sees all','vibe coding is a lifestyle','accept all changes','you are absolutely right','one more prompt','i never read the diff','tab tab tab tab','make it pretty','it works, do not ask why','ship the vibes','the agent said done'];
   for (let n = 0; n < 4; n++) {
     const row = document.createElement('div');
     row.className = 'tape' + (n % 2 ? ' rev' : '');
@@ -214,7 +214,7 @@
   if (!reduced) { setTimeout(flyby, 1500); (function loop() { flyby(); setTimeout(loop, r(2500, 6500)); })(); }
 
   /* ---- fake status log ---- */
-  const logLines = ['captions in stock: ' + window.CAPTION_COUNT.toLocaleString('en-US'),'orange levels: nominal','slurp buffer: 87%','mustache integrity: ok','smug engine: running','vibes: immaculate','memes in queue: 9001','regressions: 0 (suspicious)','touching grass: postponed','dns: blamed','coffee: critical','chaos: stable','beard.dll loaded','sleep: not found','uptime: questionable','brain: rebooting','skill issue detected','eyebrows: raised','gunterlie: online'];
+  const logLines = ['captions in stock: ' + window.CAPTION_COUNT.toLocaleString('en-US'),'orange levels: nominal','slurp buffer: 87%','mustache integrity: ok','smug engine: running','vibes: immaculate','memes in queue: 9001','regressions: 0 (suspicious)','touching grass: postponed','dns: blamed','coffee: critical','chaos: stable','beard.dll loaded','sleep: not found','uptime: questionable','brain: rebooting','skill issue detected','eyebrows: raised','gunterlie: online','vibes: committed unread','diff reviewed: no','accept all: enabled','prompt budget: ???','agent said done: unverified','context window: 98%'];
   const log = $('log'); let li = 0;
   function pushLog() {
     const d = document.createElement('div'); d.textContent = '> ' + pick(logLines);
