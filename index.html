@@ -122,8 +122,8 @@
 
     
     <g id="eyes">
-      <g id="eye-l"><ellipse cx="478" cy="660" rx="68" ry="52" fill="#fff"/><circle id="pupil-l" cx="478" cy="660" r="27" fill="#150a04"/><circle class="shine" cx="470" cy="650" r="8" fill="#fff"/></g>
-      <g id="eye-r"><ellipse cx="796" cy="660" rx="68" ry="52" fill="#fff"/><circle id="pupil-r" cx="796" cy="660" r="27" fill="#150a04"/><circle class="shine" cx="788" cy="650" r="8" fill="#fff"/></g>
+      <g id="eye-l"><ellipse cx="478" cy="612" rx="68" ry="52" fill="#fff"/><circle id="pupil-l" cx="478" cy="612" r="27" fill="#150a04"/><circle class="shine" cx="470" cy="602" r="8" fill="#fff"/></g>
+      <g id="eye-r"><ellipse cx="796" cy="612" rx="68" ry="52" fill="#fff"/><circle id="pupil-r" cx="796" cy="612" r="27" fill="#150a04"/><circle class="shine" cx="788" cy="602" r="8" fill="#fff"/></g>
     </g>
 
     <!-- Facial hair -->
@@ -181,8 +181,8 @@
   /* ---- eyes follow the pointer ---- */
   const face = $('face'), avatar = $('avatar');
   const eyes = [
-    { pupil: $('pupil-l'), shine: null, cx: 478, cy: 660 },
-    { pupil: $('pupil-r'), shine: null, cx: 796, cy: 660 },
+    { pupil: $('pupil-l'), shine: null, cx: 478, cy: 612 },
+    { pupil: $('pupil-r'), shine: null, cx: 796, cy: 612 },
   ];
   let aim = { x: 0, y: 0 }, wander = true;
   function lookAt(clientX, clientY) {
