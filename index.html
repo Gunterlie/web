@@ -16,20 +16,19 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <div class="stage">
     <div id="floats"></div>
-    <div class="hud" id="hud">clicks: 0</div>
-    <div class="toast" id="toast"></div>
+    <div class="log" id="log" aria-hidden="true"></div>
     <p class="tagline" id="tagline">what did you expect?</p>
 
     <div class="face-wrap" id="avatar" role="button" tabindex="0" aria-label="gunterlie. click for chaos">
       <div class="face" id="face">
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 1254 1254"
-     preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+     preserveAspectRatio="xMidYMid meet" aria-hidden="true">
   
   <desc>
     Vector traced from the approved concept image.
@@ -137,12 +136,15 @@
     </div>
 
     <nav class="bar">
-      <button id="reroll" type="button">reroll caption</button>
-      <button id="save" type="button">save png</button>
-      <a class="secret" id="gh" href="https://github.com/Gunterlie" rel="me noopener">github</a>
+      <div class="bar-grid">
+        <button id="reroll" type="button" class="wide">reroll caption</button>
+        <button id="save" type="button">save png</button>
+        <button id="share" type="button">share</button>
+      </div>
     </nav>
   </div>
 
+<script src="captions.js?v=4"></script>
 <script>
 (function () {
   'use strict';
@@ -159,10 +161,11 @@
   setInterval(() => { if (!document.hidden) { document.title = (t + t).slice(ti, ti + 16); ti = (ti + 1) % t.length; } }, 180);
 
   /* ---- floating words ---- */
-  const words = ['gunterlie','gunterlie','gunterlie','gunterlie','slurp','orange','what did you expect?','based','no regressions','ship it'];
+  const words = ["gunterlie", "gunterlie", "gunterlie", "gunterlie", "gunterlie", "gunterlie", "slurp", "slurp slurp", "orange", "what did you expect?", "based", "no regressions", "ship it", "touch grass", "it's dns", "lgtm", "vibes", "sudo", "git push --force", "404", "kernel panic", "segfault", "merge conflict", "skill issue", "ratio", "cope", "seethe", "mald", "gigachad", "sigma", "npc", "main character", "w", "l", "fr fr", "no cap", "bussin", "rizz", "sus", "poggers", "kekw", "monke", "stonks", "this is fine", "press f", "ok boomer", "big brain", "galaxy brain", "chef's kiss", "mustache.exe", "beard.dll", "orange.sh", "rm -rf /", "ctrl+z", "alt+f4", "hello world", "undefined", "NaN", "null", "TODO", "FIXME", "works on my machine", "one more commit", "it's friday", "sleep.exe not found", "orange man", "smug", "chaos", "memes", "lore", "canon", "banger", "cursed", "blessed", "unhinged", "feral", "goblin mode", "crab rave", "nyan", "doge", "wow", "such orange", "very meme", "much slurp"];
+  const emojis = ["🍊", "🔥", "💀", "🗿", "🦆", "🐸", "🥕", "🧡", "🚧", "📦", "🐧", "🤡", "👁️", "🫠", "🧃", "🪩", "🛸", "🌋", "🦀", "🐙", "🥭", "🍑", "⚡", "💥", "🎃", "🦊", "🐯", "🧨"];
   const stage = document.querySelector('.stage'), floats = $('floats');
   const frag = document.createDocumentFragment();
-  for (let i = 0; i < 110; i++) {
+  for (let i = 0; i < 150; i++) {
     const layer = Math.random();
     let size, opacity, dur;
     if      (layer < 0.35) { size = r(.45,.7);  opacity = r(.03,.07); dur = ri(32,48); }
@@ -171,12 +174,54 @@
     else                   { size = r(1.8,3.0); opacity = r(.14,.32); dur = ri(12,20); }
     const el = document.createElement('span');
     el.className = 'float';
-    el.textContent = pick(words);
+    const emo = Math.random() < .18; el.textContent = emo ? pick(emojis) : pick(words);
+    if (emo) { size *= 1.6; opacity = Math.min(opacity * 1.4, .4); }
     el.style.cssText = `top:${r(0,98)}%;left:${r(-2,92)}%;font-size:${size.toFixed(2)}rem;opacity:${opacity.toFixed(2)};--dx:${sgn()*ri(6,28)}px;--dy:${sgn()*ri(6,28)}px;--dr:${sgn()*ri(2,14)}deg;animation-duration:${dur}s;animation-delay:-${ri(0,dur)}s`;
     frag.appendChild(el);
   }
   floats.appendChild(frag);
   setTimeout(() => $('tagline').classList.add('hidden'), 6000);
+
+  /* ---- ticker rows (scrolling meme tape) ---- */
+  const tape = ['slurp slurp slurp','what did you expect?','no regressions','ship it on friday','it was dns','orange orange orange','touch grass (later)','skill issue','gunterlie approves','merge to main and pray','vibes only','404 sleep not found','one more commit','based and orange-pilled','chaos is a ladder','the mustache sees all'];
+  for (let n = 0; n < 4; n++) {
+    const row = document.createElement('div');
+    row.className = 'tape' + (n % 2 ? ' rev' : '');
+    row.style.top = (8 + n * 24 + r(-3, 3)) + '%';
+    row.style.animationDuration = ri(55, 95) + 's';
+    const line = Array.from({ length: 8 }, () => pick(tape)).join('   ✦   ');
+    row.textContent = line + '   ✦   ' + line;
+    floats.appendChild(row);
+  }
+
+  /* ---- random fly-bys ---- */
+  function flyby() {
+    if (document.hidden) return;
+    const el = document.createElement('div');
+    const emo = Math.random() < .5;
+    el.className = 'flyby';
+    el.textContent = emo ? pick(emojis) : pick(words);
+    const fromLeft = Math.random() < .5, y = r(8, 88), dur = ri(5, 10) * 1000;
+    el.style.top = y + '%'; el.style.fontSize = (emo ? r(2.4, 5) : r(1, 2.2)) + 'rem';
+    floats.appendChild(el);
+    const a = el.animate([
+      { transform: `translateX(${fromLeft ? '-20vw' : '120vw'}) rotate(0deg)`, opacity: 0 },
+      { opacity: .55, offset: .1 }, { opacity: .55, offset: .9 },
+      { transform: `translateX(${fromLeft ? '120vw' : '-20vw'}) rotate(${sgn() * ri(180, 720)}deg)`, opacity: 0 },
+    ], { duration: dur, easing: 'linear' });
+    a.onfinish = () => el.remove();
+  }
+  if (!reduced) { setTimeout(flyby, 1500); (function loop() { flyby(); setTimeout(loop, r(2500, 6500)); })(); }
+
+  /* ---- fake status log ---- */
+  const logLines = ['captions in stock: ' + window.CAPTION_COUNT.toLocaleString('en-US'),'orange levels: nominal','slurp buffer: 87%','mustache integrity: ok','smug engine: running','vibes: immaculate','memes in queue: 9001','regressions: 0 (suspicious)','touching grass: postponed','dns: blamed','coffee: critical','chaos: stable','beard.dll loaded','sleep: not found','uptime: questionable','brain: rebooting','skill issue detected','eyebrows: raised','gunterlie: online'];
+  const log = $('log'); let li = 0;
+  function pushLog() {
+    const d = document.createElement('div'); d.textContent = '> ' + pick(logLines);
+    log.appendChild(d); while (log.children.length > 4) log.firstChild.remove(); li++;
+  }
+  pushLog(); setInterval(pushLog, 2800);
+
 
   /* ---- eyes follow the pointer ---- */
   const face = $('face'), avatar = $('avatar');
@@ -204,99 +249,9 @@
   (function blinkLoop() { face.classList.add('blink'); setTimeout(() => face.classList.remove('blink'), 110); setTimeout(blinkLoop, r(2200, 5200)); })();
 
   /* ---- captions ---- */
-  const captions = [
-    ['when the build passes', "but you didn't change anything"],
-    ['one does not simply', 'ship on a friday'],
-    ['it works on my machine', 'so we shipped my machine'],
-    ['what did you expect?', 'gunterlie'],
-    ["i'll just fix one thing", 'also me: 14 new containers'],
-    ['i asked for a small pr', 'the diff: 4,000 lines'],
-    ['slurp', 'slurp slurp'],
-    ['no regressions', 'famous last words'],
-    ['404', 'sleep not found'],
-    ['they said touch grass', 'i touched the terminal'],
-    ['me: i need a plan', 'also me: vibes'],
-    ['orange guy', 'smug guy'],
-    ['its not a bug', 'its a feature with attitude'],
-    ['merge conflict?', 'i hardly know her'],
-    ["me explaining the plan", "the plan: vibes"],
-    ["reviewer: any concerns?", "me: several, all of them mine"],
-    ["fixed one bug", "found three friends"],
-    ["i'll sleep early tonight", "it is 4am. the container is up"],
-    ["just one more commit", "sunrise"],
-    ["it compiles", "ship it"],
-    ["the tests are green", "because i deleted the tests"],
-    ["senior dev energy", "turn it off and on again"],
-    ["git blame", "oh no. it's me"],
-    ["works in dev", "prod has entered the chat"],
-    ["we have a backup", "do we restore it? never tried"],
-    ["monday morning", "the pipeline has opinions"],
-    ["me: small refactor", "the repo: who are you"],
-    ["i read the docs", "the docs lied"],
-    ["is it dns?", "it's always dns"],
-    ["is it dns?", "no. it was dns"],
-    ["todo: fix later", "later: never"],
-    ["temporary workaround", "since 2019"],
-    ["it's just a quick script", "300 lines and a cron job"],
-    ["hello world", "goodbye weekend"],
-    ["my code", "a mystery, even to me"],
-    ["rubber duck", "never speaks, always judges"],
-    ["this is fine", "the logs: on fire"],
-    ["ctrl+z", "ctrl+z. ctrl+z. oh no"],
-    ["ai wrote this", "i take full credit"],
-    ["prompt: be careful", "ai: i deleted prod, carefully"],
-    ["vibe coding", "vibe debugging"],
-    ["one more agent", "and one more agent"],
-    ["too many tabs", "no regrets, only tabs"],
-    ["i have a system", "the system: 47 sticky notes"],
-    ["orange you glad", "i didn't say banana"],
-    ["ginger power", "unlimited, unbothered"],
-    ["stand back", "i'm about to touch the config"],
-    ["sudo make me a sandwich", "okay"],
-    ["rm -rf", "is a lifestyle"],
-    ["boss: can you quickly", "me: define quickly"],
-    ["estimate: two hours", "reality: two weekends"],
-    ["reading the changelog", "reading the whole changelog"],
-    ["he's not a bug", "he's a feature request"],
-    ["zero days since", "the last 'quick' fix"],
-    ["i accept your offer", "to touch grass. later"],
-    ["delete the cache", "and cry"],
-    ["did you try turning it off", "yes. and on. and off"],
-    ["wifi works", "i fear what changed"],
-    ["average gunterlie enjoyer", "chronically orange"],
-    ["me, a smart man", "also me, rebooting the router"],
-    ["gunterlie", "has entered the chat"],
-    ["welcome to", "the orange zone"],
-    ["you've been", "gunterlie'd"],
-    ["so it begins", "slurp"],
-    ["slurp slurp slurp", "slurp"],
-    ["nobody:", "gunterlie: slurp"],
-    ["breaking news", "orange man is smug"],
-    ["press f", "to pay respects to the build"],
-    ["bitcoin", "gunterlie coin: priceless"],
-    ["kernel panic", "gunterlie: don't panic"],
-    ["stack overflow", "my one true friend"],
-    ["merge to main", "pray"],
-    ["friday 17:59", "i have one small change"],
-    ["it said 'are you sure?'", "i was not sure. i clicked yes"],
-    ["i don't always test", "but when i do, it's in prod"],
-    ["my toaster", "now runs docker"],
-    ["my homelab", "is a cry for help"],
-    ["more ram", "less problems (lie)"],
-    ["swap is full", "so is my heart"],
-    ["new container", "who dis"],
-    ["the nas said no", "the nas is always right"],
-    ["one does not simply", "turn off the light and leave"],
-    ["brace yourselves", "gunterlie is coming"],
-    ["hold my coffee", "i'm about to push"],
-    ["success", "is just failure, but orange"],
-    ["sleep", "is for the merged"],
-    ["trust me", "i'm an orange man"],
-    ["i've seen things", "in the dependency tree"],
-  ];
-  let cur = captions[3];
+    let cur = window.makeCaption();
   function setCaption(c) { cur = c; $('cap-top').textContent = c[0]; $('cap-bot').textContent = c[1]; }
-  function reroll() { let c; do { c = pick(captions); } while (c === cur); setCaption(c); }
+  function reroll() { let c; do { c = window.makeCaption(); } while (c[0] === cur[0] && c[1] === cur[1]); setCaption(c); }
   setCaption(cur);
   $('reroll').addEventListener('click', reroll);
 
@@ -313,13 +268,8 @@
     [[{transform:'rotate(0) scale(1)'},{transform:'rotate(-25deg) scale(1.1)'},{transform:'rotate(18deg) scale(.95)'},{transform:'rotate(0) scale(1)'}], 800],
   ];
   const brows = ['brow-left','brow-right'].map($);
-  const achievements = { 1:'first contact', 10:'tickler', 25:'memelord apprentice', 50:'unhinged', 100:'touch grass', 250:'orange supremacy' };
-  let toastT;
-  function toast(msg) { const el = $('toast'); el.textContent = '★ ' + msg; el.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 2600); }
   function poke() {
-    clicks++; $('hud').textContent = 'clicks: ' + clicks;
-    if (clicks === 1) $('gh').classList.add('show');
-    if (achievements[clicks]) toast(achievements[clicks]);
+    clicks++;
     if (busy) return;
     busy = true;
     const surprise = Math.random() < .3;
@@ -341,7 +291,7 @@
   let ki = 0;
   addEventListener('keydown', (e) => {
     ki = (e.key.toLowerCase() === code[ki].toLowerCase()) ? ki + 1 : (e.key === code[0] ? 1 : 0);
-    if (ki === code.length) { ki = 0; document.body.classList.toggle('party'); toast('party mode'); $('gh').classList.add('show'); }
+    if (ki === code.length) { ki = 0; document.body.classList.toggle('party'); }
   });
 
   /* ---- save as png ---- */
@@ -350,25 +300,54 @@
     for (const w of text.split(' ')) { const t2 = line ? line + ' ' + w : w; if (ctx.measureText(t2).width > maxW && line) { out.push(line); line = w; } else line = t2; }
     out.push(line); return out;
   }
-  $('save').addEventListener('click', () => {
-    const svg = face.querySelector('svg').cloneNode(true);
-    svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    svg.setAttribute('width', 1254); svg.setAttribute('height', 1254);
-    const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-    bg.setAttribute('width', 1254); bg.setAttribute('height', 1254); bg.setAttribute('fill', '#1d0d05');
-    svg.insertBefore(bg, svg.firstChild);
-    const img = new Image();
-    img.onload = () => {
-      const S = 1254, c = document.createElement('canvas'); c.width = c.height = S;
-      const ctx = c.getContext('2d'); ctx.drawImage(img, 0, 0, S, S);
-      ctx.font = '900 112px Impact, "Arial Black", sans-serif'; ctx.textAlign = 'center'; ctx.lineJoin = 'round';
-      ctx.lineWidth = 12; ctx.strokeStyle = '#000'; ctx.fillStyle = '#fff';
-      const draw = (text, y, dir) => { const ls = wrap(ctx, text.toUpperCase(), S * .92); ls.forEach((l, i) => { const yy = dir > 0 ? y + i * 118 : y - (ls.length - 1 - i) * 118; ctx.strokeText(l, S / 2, yy); ctx.fillText(l, S / 2, yy); }); };
-      draw(cur[0], 130, 1); draw(cur[1], S - 50, -1);
-      ctx.font = '700 28px "Space Mono", monospace'; ctx.fillStyle = 'rgba(255,255,255,.55)'; ctx.textAlign = 'right'; ctx.fillText('gunterlie.de', S - 24, S - 8);
-      c.toBlob((b) => { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'gunterlie-meme.png'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); toast('saved. go forth'); }, 'image/png');
-    };
-    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(new XMLSerializer().serializeToString(svg));
+  function renderMeme() {
+    return new Promise((resolve, reject) => {
+      const svg = face.querySelector('svg').cloneNode(true);
+      svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+      svg.setAttribute('width', 1254); svg.setAttribute('height', 1254);
+      const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      bg.setAttribute('width', 1254); bg.setAttribute('height', 1254); bg.setAttribute('fill', '#1d0d05');
+      svg.insertBefore(bg, svg.firstChild);
+      const img = new Image();
+      img.onerror = reject;
+      img.onload = () => {
+        const S = 1254, c = document.createElement('canvas'); c.width = c.height = S;
+        const ctx = c.getContext('2d'); ctx.drawImage(img, 0, 0, S, S);
+        ctx.font = '900 112px Impact, "Arial Black", sans-serif'; ctx.textAlign = 'center'; ctx.lineJoin = 'round';
+        ctx.lineWidth = 12; ctx.strokeStyle = '#000'; ctx.fillStyle = '#fff';
+        const draw = (text, y, dir) => { const ls = wrap(ctx, text.toUpperCase(), S * .92); ls.forEach((l, i) => { const yy = dir > 0 ? y + i * 118 : y - (ls.length - 1 - i) * 118; ctx.strokeText(l, S / 2, yy); ctx.fillText(l, S / 2, yy); }); };
+        draw(cur[0], 130, 1); draw(cur[1], S - 50, -1);
+        ctx.font = '700 28px "Space Mono", monospace'; ctx.fillStyle = 'rgba(255,255,255,.55)'; ctx.textAlign = 'right'; ctx.fillText('gunterlie.de', S - 24, S - 8);
+        c.toBlob((b) => b ? resolve(b) : reject(new Error('toBlob failed')), 'image/png');
+      };
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(new XMLSerializer().serializeToString(svg));
+    });
+  }
+  function download(blob) {
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'gunterlie-meme.png'; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+  function flash(btn, text) { const old = btn.dataset.label || (btn.dataset.label = btn.textContent); btn.textContent = text; setTimeout(() => { btn.textContent = old; }, 1600); }
+
+  $('save').addEventListener('click', () => { renderMeme().then(download).catch(() => {}); });
+
+  $('share').addEventListener('click', async () => {
+    const btn = $('share');
+    try {
+      const blob = await renderMeme();
+      const file = new File([blob], 'gunterlie-meme.png', { type: 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: 'gunterlie', url: 'https://gunterlie.de' });
+      } else if (navigator.clipboard && window.ClipboardItem) {
+        await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+        flash(btn, 'copied!');
+      } else {
+        download(blob); flash(btn, 'saved');
+      }
+    } catch (err) {
+      if (err && err.name === 'AbortError') return;
+      try { download(await renderMeme()); flash(btn, 'saved'); } catch (e) { flash(btn, 'failed'); }
+    }
   });
 })();
 </script>
