@@ -53,3 +53,8 @@ body::after { content:""; position:fixed; inset:0; pointer-events:none; z-index:
 .log { position:fixed; left:16px; bottom:16px; z-index:60; font-size:.66rem; letter-spacing:.1em; color:rgba(255,230,210,.5); pointer-events:none; line-height:1.5; }
 @media (max-width:700px) { .log { display:none; } }
 @media (prefers-reduced-motion:reduce) { .tape,.flyby { animation:none; } .tape { display:none; } }
+
+/* actions: reroll on top, save + share below */
+.bar-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; width:min(340px,100%); }
+.bar-grid .wide { grid-column:1 / -1; }
+.bar-grid button { text-align:center; white-space:nowrap; }
