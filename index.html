@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <div class="stage">
@@ -144,7 +144,7 @@
     </nav>
   </div>
 
-<script src="captions.js?v=5"></script>
+<script src="captions.js?v=6"></script>
 <script>
 (function () {
   'use strict';
@@ -214,7 +214,7 @@
   if (!reduced) { setTimeout(flyby, 1500); (function loop() { flyby(); setTimeout(loop, r(2500, 6500)); })(); }
 
   /* ---- fake status log ---- */
-  const logLines = ['captions in stock: ' + window.CAPTION_COUNT.toLocaleString('en-US'),'orange levels: nominal','slurp buffer: 87%','mustache integrity: ok','smug engine: running','vibes: immaculate','memes in queue: 9001','regressions: 0 (suspicious)','touching grass: postponed','dns: blamed','coffee: critical','chaos: stable','beard.dll loaded','sleep: not found','uptime: questionable','brain: rebooting','skill issue detected','eyebrows: raised','gunterlie: online','vibes: committed unread','diff reviewed: no','accept all: enabled','prompt budget: ???','agent said done: unverified','context window: 98%'];
+  const logLines = ['orange levels: nominal','slurp buffer: 87%','mustache integrity: ok','smug engine: running','vibes: immaculate','memes in queue: 9001','regressions: 0 (suspicious)','touching grass: postponed','dns: blamed','coffee: critical','chaos: stable','beard.dll loaded','sleep: not found','uptime: questionable','brain: rebooting','skill issue detected','eyebrows: raised','gunterlie: online','vibes: committed unread','diff reviewed: no','accept all: enabled','prompt budget: ???','agent said done: unverified','context window: 98%'];
   const log = $('log'); let li = 0;
   function pushLog() {
     const d = document.createElement('div'); d.textContent = '> ' + pick(logLines);
