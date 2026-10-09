@@ -21,8 +21,6 @@
 <body>
   <div class="stage">
     <div id="floats"></div>
-    <div class="hud" id="hud">clicks: 0</div>
-    <div class="toast" id="toast"></div>
     <div class="log" id="log" aria-hidden="true"></div>
     <p class="tagline" id="tagline">what did you expect?</p>
 
@@ -268,13 +266,9 @@
     [[{transform:'rotate(0) scale(1)'},{transform:'rotate(-25deg) scale(1.1)'},{transform:'rotate(18deg) scale(.95)'},{transform:'rotate(0) scale(1)'}], 800],
   ];
   const brows = ['brow-left','brow-right'].map($);
-  const achievements = { 1:'first contact', 10:'tickler', 25:'memelord apprentice', 50:'unhinged', 100:'touch grass', 250:'orange supremacy' };
-  let toastT;
-  function toast(msg) { const el = $('toast'); el.textContent = '★ ' + msg; el.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 2600); }
   function poke() {
-    clicks++; $('hud').textContent = 'clicks: ' + clicks;
+    clicks++;
     if (clicks === 1) $('gh').classList.add('show');
-    if (achievements[clicks]) toast(achievements[clicks]);
     if (busy) return;
     busy = true;
     const surprise = Math.random() < .3;
@@ -296,7 +290,7 @@
   let ki = 0;
   addEventListener('keydown', (e) => {
     ki = (e.key.toLowerCase() === code[ki].toLowerCase()) ? ki + 1 : (e.key === code[0] ? 1 : 0);
-    if (ki === code.length) { ki = 0; document.body.classList.toggle('party'); toast('party mode'); $('gh').classList.add('show'); }
+    if (ki === code.length) { ki = 0; document.body.classList.toggle('party'); $('gh').classList.add('show'); }
   });
 
   /* ---- save as png ---- */
@@ -321,7 +315,7 @@
       const draw = (text, y, dir) => { const ls = wrap(ctx, text.toUpperCase(), S * .92); ls.forEach((l, i) => { const yy = dir > 0 ? y + i * 118 : y - (ls.length - 1 - i) * 118; ctx.strokeText(l, S / 2, yy); ctx.fillText(l, S / 2, yy); }); };
       draw(cur[0], 130, 1); draw(cur[1], S - 50, -1);
       ctx.font = '700 28px "Space Mono", monospace'; ctx.fillStyle = 'rgba(255,255,255,.55)'; ctx.textAlign = 'right'; ctx.fillText('gunterlie.de', S - 24, S - 8);
-      c.toBlob((b) => { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'gunterlie-meme.png'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); toast('saved. go forth'); }, 'image/png');
+      c.toBlob((b) => { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'gunterlie-meme.png'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); }, 'image/png');
     };
     img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(new XMLSerializer().serializeToString(svg));
   });

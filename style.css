@@ -39,10 +39,6 @@ body::after { content:""; position:fixed; inset:0; pointer-events:none; z-index:
 .bar .secret { opacity:0; pointer-events:none; transform:translateY(8px); transition:opacity .5s,transform .5s; }
 .bar .secret.show { opacity:1; pointer-events:auto; transform:none; }
 
-.hud { position:fixed; top:14px; left:16px; z-index:60; font-size:.7rem; letter-spacing:.18em; color:rgba(255,230,210,.7); }
-.toast { position:fixed; top:44px; left:16px; z-index:60; font-size:.72rem; letter-spacing:.14em; color:#150a04; background:var(--orange);
-  padding:.5em .9em; opacity:0; transform:translateX(-12px); transition:opacity .3s,transform .3s; pointer-events:none; }
-.toast.show { opacity:1; transform:none; }
 
 .tagline { position:fixed; top:14px; right:16px; z-index:60; font-size:.7rem; letter-spacing:.2em; color:rgba(255,230,210,.75); transition:opacity 1.2s; pointer-events:none; }
 .tagline.hidden { opacity:0; }
